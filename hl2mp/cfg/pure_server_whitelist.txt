@@ -34,32 +34,35 @@ whitelist
 	//	2. directory\...			- refers to all files under the directory and all directories under that (recursively)
 	//	3. directory\filename		- refers to a single file
 
-	materials\...							trusted_source
-	materials\models\player\...				any
-	materials\vgui\replay\thumbnails\...	any
-	materials\vgui\resource\...				any
-	models\...								trusted_source
-	models\player\...						any
-	particles\...							trusted_source
-	scripts\game_sounds.txt					trusted_source
-	scripts\game_sounds_manifest.txt		trusted_source
-	scripts\game_sounds_player.txt			trusted_source
-	scripts\game_sounds_vo.txt				trusted_source
-	scripts\game_sounds_vo_handmade.txt		trusted_source
-	scripts\game_sounds_weapons.txt			trusted_source
-	sound\...								trusted_source
-	sound\ui\hitsound.wav					any
-	sound\weapons\...						any
+	// In pure_server_full.txt
+	//sound\...								trusted_source
+	//models\...							trusted_source
+	//materials\...							trusted_source
+	//particles\...							trusted_source
+	//scripts\game_sounds.txt				trusted_source
+	//scripts\game_sounds_manifest.txt		trusted_source
+	//scripts\game_sounds_player.txt		trusted_source
+	//scripts\game_sounds_vo.txt			trusted_source
+	//scripts\game_sounds_vo_handmade.txt 	trusted_source
+	//scripts\game_sounds_weapons.txt		trusted_source
 
 	// Allow custom weapon models
-	models\weapons\...						any
 	materials\models\weapons\...			any
+	models\weapons\...						any
 
-	// Allow custom spray decals
-	//materials\temp\...          			any
-	//materials\vgui\logos\...    			any
-	//materials\vgui\logos\ui\... 			any
-	
 	// Fix snd_restart crashing
 	scripts\soundmixers.txt         		any
+
+	// Allow custom spray decals
+	materials\temp\...          			any
+	materials\vgui\logos\...    			any
+	materials\vgui\logos\ui\... 			any
+
+	// Other common exceptions
+	//materials\models\player\...			any
+	//materials\vgui\replay\thumbnails\...	any
+	//materials\vgui\resource\...			any
+	//models\player\...						any
+	//sound\ui\hitsound.wav					any
+	//sound\weapons\...						any
 }
